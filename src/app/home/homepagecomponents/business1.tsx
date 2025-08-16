@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Box, TextField, Grid, Typography, Paper, Divider } from "@mui/material";
 
+
 export default function BusinessForm() {
   const [businessName, setBusinessName] = useState("");
   const [email, setEmail] = useState("");
@@ -48,7 +49,7 @@ export default function BusinessForm() {
             <Divider sx={{ my: 1 }} />
 
             <Box>
-              <Typography color="text.secondary" sx={{ fontSize: "0.95rem", mb: 1 }}>
+              {/* <Typography color="text.secondary" sx={{ fontSize: "0.95rem", mb: 1 }}>
                 {email || "your@email.com"}
               </Typography>
 
@@ -70,7 +71,9 @@ export default function BusinessForm() {
 
               <Typography variant="body2" sx={{ mt: 1, fontSize: "0.9rem", fontStyle: "italic" }}>
                 💬 Message the Business
-              </Typography>
+              </Typography> */}
+              
+
             </Box>
           </Paper>
         </Grid>
@@ -78,3 +81,4 @@ export default function BusinessForm() {
     </Box>
   );
 }
+

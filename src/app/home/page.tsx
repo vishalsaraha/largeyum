@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import SearchBar from './homepagecomponents/searchbar';
 import Slider from './homepagecomponents/slider';
-import SignIn from './homepagecomponents/login';
+import Link from 'next/link';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -102,6 +102,7 @@ export default function Types() {
                       fontWeight: 'bold'
                     }}
                   >
+                    
                     Write a Review
                   </Button>
                   <Button
@@ -116,11 +117,18 @@ export default function Types() {
                   >
                   Start a Project
                   </Button>
+                  <main style={{ padding: '20px' }}>
+      <h1>🏠 Welcome to Home Page</h1>
+      <p>Click below to view all employees:</p>
+      <Link href="./homepagecomponents/business1">
+        <button>📋 View Employees</button>
+      </Link>
+    </main>
               </Box>
         </Grid>
         
           <Grid size={2}>
-       <SignIn/>
+      
       
         </Grid>
         
